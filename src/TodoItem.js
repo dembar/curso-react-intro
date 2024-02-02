@@ -1,5 +1,5 @@
 import './TodoItem.css'
-import { AiFillAlert } from "react-icons/ai";
+// import { AiFillAlert } from "react-icons/ai";
 
 function TodoItem(props){
     return (
@@ -8,7 +8,7 @@ function TodoItem(props){
           onClick={props.onComplete}
           className = {`Icon Icon-check ${props.completed && "Icon-check--active"}`}></span> */}
         
-        <AiFillAlert />
+        {/*<AiFillAlert />*/}
         <p className = {`TodoItem-p ${props.completed && "TodoItem-p--complete"}`}>{props.text}</p>
         <span 
           onClick={props.onDelete}
